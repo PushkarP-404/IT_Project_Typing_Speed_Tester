@@ -7,3 +7,4 @@ Decided functions are:
 2. Timer & Metrics
 3. UI/Input
 4. Text generation
+5. Menu & Integration
