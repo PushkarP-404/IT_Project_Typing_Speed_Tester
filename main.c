@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//#include <sys/select.h>  // For select() - POSIX
-#include <winsock2.h>
-#include <ws2tcpip.h>
+#include <sys/select.h>  // For select() - POSIX
 #include <sys/time.h>
 #include <unistd.h>      // For read()
 #include <signal.h>      // For signal handling (backup)
