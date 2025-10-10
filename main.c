@@ -128,7 +128,7 @@ int main() {
     // Flush any remaining input (optional, but helps on some systems)
     // Note: fflush(stdin) is non-standard; use a loop if needed, but select should handle it
 
-    printf("\n\n%s%sTime's up! (or you finished early\n",RED,BOLD);
+    printf("\n\n%s%sTime's up! (or you finished early)\n",RED,BOLD);
 
     // Calculate actual time taken (in minutes)
     double time_taken_min = (double)(time(NULL) - start_time) / 60.0;
@@ -173,7 +173,7 @@ int main() {
 
 
     // Output results
-    printf("\n%sResults:%s\n", BOLD, RESET);
+    printf("\n%s%sResults:%s\n", BOLD, BLUE, RESET);
     printf("%s--------%s\n", BOLD, RESET);
     printf("Time taken: %.1f seconds (%.2f minutes)\n", time_taken_min * 60.0, time_taken_min);
     printf("Final characters typed: %d\n", input_len);
@@ -185,4 +185,3 @@ int main() {
     
     return 0;
 }
-
