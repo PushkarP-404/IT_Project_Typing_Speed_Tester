@@ -37,8 +37,8 @@ int main() {
     struct timeval timeout;
     int ret;
     time_t start_time;
-
-   printf("%s%sTyping Speed Tester (with Backspace Support)%s\n", BOLD, CYAN, RESET);
+    printf("%s============================================%s\n", BOLD, RESET);
+    printf("%s%sTyping Speed Tester (with Backspace Support)%s\n", BOLD, CYAN, RESET);
     printf("%s============================================%s\n", BOLD, RESET);
     printf("\n");
     // Colored target sentence
@@ -185,3 +185,4 @@ int main() {
     
     return 0;
 }
+
