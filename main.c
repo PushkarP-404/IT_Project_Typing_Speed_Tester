@@ -173,15 +173,15 @@ int main() {
 
 
     // Output results
-    printf("\n%s%sResults:%s\n", BOLD, BLUE, RESET);
+    printf("\n%s%sResults:%s\n", BOLD,BLUE, RESET);
     printf("%s--------%s\n", BOLD, RESET);
     printf("Time taken: %.1f seconds (%.2f minutes)\n", time_taken_min * 60.0, time_taken_min);
     printf("Final characters typed: %d\n", input_len);
     printf("Final words typed: %d\n", word_count);
     printf("%sTyping speed: %.2f WPM (net, based on final correct words)%s\n", wpm_color, wpm, RESET);
     printf("%sAccuracy: %.2f%%%s (character matches in final input)\n", accuracy_color, accuracy, RESET);
-    printf("\nWhat you typed (final): %s\"%s\"%s\n", MAGENTA, user_input, RESET);
-    printf("Target: %s\"%s\"%s\n", GREEN, target, RESET);
+    printf("\n%sWhat you typed (final): %s\"%s\"%s\n", YELLOW,BOLD, user_input, RESET);
+    printf("%sTarget: %s\"%s\"%s\n", BOLD,GREEN, target, RESET);
     
     return 0;
 }
